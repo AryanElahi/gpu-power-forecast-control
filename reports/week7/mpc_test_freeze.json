@@ -1,0 +1,49 @@
+{
+ "frozen_at": "2026-10-14 09:16:03",
+ "git_head": "96597605437198fbfb9cb0a5da4aee2b50ccbbd4",
+ "settings": {
+  "R_main": 1.0,
+  "R_sens": [
+   0.5,
+   2.0
+  ],
+  "E_grid": [
+   1.0,
+   2.0,
+   5.0,
+   10.0,
+   20.0
+  ],
+  "E_sens": 5.0,
+  "Pmax": "2*E",
+  "eta": 0.95,
+  "soc": [
+   0.1,
+   0.9,
+   0.5
+  ],
+  "weights": [
+   1000.0,
+   1.0,
+   0.01
+  ],
+  "horizon": 15,
+  "solver": "CLARABEL",
+  "model": "lightgbm_cov",
+  "seed": 0,
+  "viol_ok": 0.001
+ },
+ "validation_needed_capacity": {
+  "oracle": 2.0,
+  "model": 5.0,
+  "persistence": 5.0,
+  "myopic": 5.0
+ },
+ "inputs_sha256": {
+  "reports/week4/test_predictions.parquet": "04890aac0591129fb7ca43b6afeba82300a8cbba52b9ab5bda4265c1f65baac3",
+  "data/processed/model_dataset.parquet": "55001c2f957c3be21cf9c0b21250c61ad55ddf3daa7714e4e4c69ae2c29edf47",
+  "src/control/battery_mpc.py": "8c0b15d6de98a9ccdefea650a4bb1d77270f35377f030663bc40cd25a2fc1c7c"
+ },
+ "test_run_at": "2026-10-14 09:39:03",
+ "test_table_sha256": "c88187755589101ecaa3c8c9b5321077862f79c99f630503819cb38aff150a28"
+}

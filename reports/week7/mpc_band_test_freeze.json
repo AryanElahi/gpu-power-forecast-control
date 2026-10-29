@@ -1,0 +1,37 @@
+{
+ "frozen_at": "2026-10-14 11:56:00",
+ "git_head": "96597605437198fbfb9cb0a5da4aee2b50ccbbd4",
+ "selected_method": {
+  "lightgbm_cov": "mondrian_pc",
+  "persistence": "aci"
+ },
+ "test_runs": [
+  [
+   1.0,
+   1.0
+  ],
+  [
+   2.0,
+   1.0
+  ],
+  [
+   5.0,
+   1.0
+  ],
+  [
+   5.0,
+   0.5
+  ]
+ ],
+ "rule": "method with the smaller validation excess ramp at E = 2 kWh, R = 1.0",
+ "inputs_sha256": {
+  "reports/week4/test_predictions.parquet": "04890aac0591129fb7ca43b6afeba82300a8cbba52b9ab5bda4265c1f65baac3",
+  "reports/week7/conformal_test_intervals.parquet": "2625c2397de79bc85d8d3965b866a623c0fae1ed6b6013982210c942987b9521",
+  "reports/week7/conformal_val.json": "cce4b367a48bb7e604bf280e75f74623462d8e7a98670e5fb1334ecd4c8a103a",
+  "src/control/battery_mpc.py": "8c0b15d6de98a9ccdefea650a4bb1d77270f35377f030663bc40cd25a2fc1c7c",
+  "src/control/scenario_mpc.py": "df27d6cc68e548b49eebb66f7910e01e00b6c69570e4f29a3c260510d129fede",
+  "src/evaluation/conformal.py": "0d2d346bde1ccd64fa45430bd38918693317a8dd9ac75ba719cd3806d93b5e52"
+ },
+ "test_run_at": "2026-10-14 12:08:52",
+ "test_table_sha256": "7745be25e6354e4a8a30351d3c368932af18812d2b681a7b1184dd8f2a5b1337"
+}

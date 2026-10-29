@@ -1,0 +1,83 @@
+{
+ "model": "amazon/chronos-bolt-small",
+ "chronos": "2.3.2",
+ "transformers": "5.19.0",
+ "torch": "2.14.1",
+ "mps": true,
+ "n_params": 47718016,
+ "synthetic": {
+  "60": {
+   "L": 60,
+   "shape_ok": true,
+   "nan_in_context_rows": 0,
+   "skill_h1": "0.116",
+   "skill_h5": "0.125",
+   "skill_h15": "0.298",
+   "quantiles_ordered": true
+  },
+  "512": {
+   "L": 512,
+   "shape_ok": true,
+   "nan_in_context_rows": 12,
+   "skill_h1": "0.085",
+   "skill_h5": "0.117",
+   "skill_h15": "0.44",
+   "quantiles_ordered": true
+  }
+ },
+ "real_2000": [
+  {
+   "L": 60,
+   "device": "cpu",
+   "ms_per_origin": 0.681,
+   "est_min_full_val": 0.5,
+   "nan_share_context": 0.0,
+   "MAE_h1": 0.2721,
+   "skill_h1": 0.019,
+   "MAE_h5": 0.438,
+   "skill_h5": -0.001,
+   "MAE_h15": 0.6363,
+   "skill_h15": -0.082
+  },
+  {
+   "L": 60,
+   "device": "mps",
+   "ms_per_origin": 0.646,
+   "est_min_full_val": 0.5,
+   "nan_share_context": 0.0,
+   "MAE_h1": 0.2721,
+   "skill_h1": 0.019,
+   "MAE_h5": 0.438,
+   "skill_h5": -0.001,
+   "MAE_h15": 0.6363,
+   "skill_h15": -0.082
+  },
+  {
+   "L": 512,
+   "device": "cpu",
+   "ms_per_origin": 3.05,
+   "est_min_full_val": 2.2,
+   "nan_share_context": 0.0054,
+   "MAE_h1": 0.2776,
+   "skill_h1": -0.001,
+   "MAE_h5": 0.4224,
+   "skill_h5": 0.035,
+   "MAE_h15": 0.5721,
+   "skill_h15": 0.027
+  },
+  {
+   "L": 512,
+   "device": "mps",
+   "ms_per_origin": 1.773,
+   "est_min_full_val": 1.3,
+   "nan_share_context": 0.0054,
+   "MAE_h1": 0.2776,
+   "skill_h1": -0.001,
+   "MAE_h5": 0.4224,
+   "skill_h5": 0.035,
+   "MAE_h15": 0.5721,
+   "skill_h15": 0.027
+  }
+ ],
+ "n_val_origins": 42575
+}

@@ -1,0 +1,48 @@
+{
+ "frozen_at": "2026-10-09 19:11:27",
+ "git_head": "96597605437198fbfb9cb0a5da4aee2b50ccbbd4",
+ "protocol": [
+  "model set frozen",
+  "train only, no refit on train+val",
+  "networks from saved checkpoints",
+  "LightGBM refit on train with tuned params and rounds, seeds 0-2",
+  "ARIMA/ETS fixed filters",
+  "ridge AR refit on train with validation alpha",
+  "foundation models zero-shot, validation-chosen context",
+  "one test run; later fixes reported"
+ ],
+ "foundation_context": {
+  "chronos_bolt_small": 512,
+  "timesfm_2p5_200m": 512
+ },
+ "inputs_sha256": {
+  "data/processed/model_dataset.parquet": "55001c2f957c3be21cf9c0b21250c61ad55ddf3daa7714e4e4c69ae2c29edf47",
+  "reports/baselines/baselines_summary.json": "e3f728c48a7bd9154830e2ec6ea2af463ca625db88e6936cd9c2c1e318a4e54b",
+  "reports/classical/classical_summary.json": "acbd2af76de456566c835b34adb8bb049ec18eb080172c22326b74f8cf108a7c"
+ },
+ "val_reproduction_max_diff_kW": 2.86102294921875e-06,
+ "models": [
+  "ar_lags",
+  "ar_lags_cal",
+  "ar_lags_cal_cov",
+  "auto_arima",
+  "auto_ets",
+  "chronos_bolt_small_ctx512",
+  "dlinear",
+  "gru",
+  "gru_uni",
+  "lightgbm",
+  "lightgbm_cov",
+  "lstm",
+  "nhits",
+  "nlinear",
+  "patchtst",
+  "pers_mod5_rolling",
+  "pers_mod5_static",
+  "persistence",
+  "seasonal_naive_1d",
+  "timesfm_2p5_200m_ctx512"
+ ],
+ "test_predictions_sha256": "04890aac0591129fb7ca43b6afeba82300a8cbba52b9ab5bda4265c1f65baac3",
+ "test_opened_at": "2026-10-09 19:49:39"
+}

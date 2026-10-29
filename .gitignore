@@ -1,0 +1,38 @@
+# --- OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# --- Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.bak
+*.bak_*
+
+# --- Data (MIT Supercloud, CC BY-NC-ND 4.0: never committed)
+data/*
+!data/README.md
+!data/raw/
+data/raw/*
+!data/raw/tsfm_lineage.csv
+*.parquet
+
+# --- Experiment tracking and model weights
+wandb/
+experiments/wandb/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+lightning_logs/
+
+# --- Generated
+notebooks/_reproduced/
+*.log
+
+# --- Third-party papers (not redistributable); see docs/papers/README.md
+docs/papers/*.pdf
+
+# --- Deprecated code kept locally only
+src/eval/

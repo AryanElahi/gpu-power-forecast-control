@@ -1,0 +1,10 @@
+kind: rf
+variant: ctrl_rf_q8_f40
+n_qubits: 8
+depth: 4
+scale: 0.09817477042468103
+seed: 2
+fraction: 0.01
+cutoff_index: 210720
+name: ctrl_rf_q8_f40_f001_s2
+group: week6_fraction

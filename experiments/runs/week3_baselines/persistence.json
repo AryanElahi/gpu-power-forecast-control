@@ -1,0 +1,46 @@
+{
+ "name": "persistence",
+ "group": "week3_baselines",
+ "logged": "2026-10-09 13:29:31",
+ "config": {
+  "model": "persistence",
+  "notebook": "07_baselines.ipynb",
+  "split": "val"
+ },
+ "metrics": {
+  "h1/MAE": 0.28658132870966735,
+  "h1/RMSE": 0.5110138235572291,
+  "h1/sMAPE": 0.9163028397267655,
+  "h1/R2": 0.9965584547149015,
+  "h1/R2_delta": -1.3858795866461548e-07,
+  "h1/skill_MAE": 0.0,
+  "h1/MAE_ramp": 1.6074358371918964,
+  "h1/MAE_normal": 0.22640041209295983,
+  "h1/ramp_F1": 0.0,
+  "h5/MAE": 0.4299301787338184,
+  "h5/RMSE": 0.8971161153639093,
+  "h5/sMAPE": 1.4269585183211702,
+  "h5/R2": 0.9893880875416768,
+  "h5/R2_delta": -8.521686201135026e-07,
+  "h5/skill_MAE": 0.0,
+  "h5/MAE_ramp": 2.6310774386885107,
+  "h5/MAE_normal": 0.29672598566937564,
+  "h5/ramp_F1": 0.0,
+  "h15/MAE": 0.60484856507533,
+  "h15/RMSE": 1.1784241010635044,
+  "h15/sMAPE": 2.0806495325844603,
+  "h15/R2": 0.9816676487487408,
+  "h15/R2_delta": -5.218340928703213e-06,
+  "h15/skill_MAE": 0.0,
+  "h15/MAE_ramp": 3.278706932600407,
+  "h15/MAE_normal": 0.41986988897164695,
+  "h15/ramp_F1": 0.0
+ },
+ "files": [
+  "/Users/aryaneuse/Desktop/Uni Project/datacenter-power-forecasting/reports/baselines/val_metrics.csv"
+ ],
+ "wandb": {
+  "mode": "online",
+  "url": "https://wandb.ai/aryan-faghirollahy-uok/datacenter-power-forecasting/runs/uh5vmtrj"
+ }
+}

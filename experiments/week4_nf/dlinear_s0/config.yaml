@@ -1,0 +1,17 @@
+lr: 0.001
+batch: 512
+epochs: 30
+patience: 3
+grad_clip: 1.0
+weight_decay: 0.0
+scaling: local
+calendar: false
+covariates: false
+dataset: data/processed/model_dataset.parquet
+dataset_meta: data/processed/model_dataset_meta.json
+model: dlinear
+name: dlinear_s0
+group: week4_nf
+seed: 0
+device: cpu
+family: nf

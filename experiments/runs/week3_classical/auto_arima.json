@@ -1,0 +1,46 @@
+{
+ "name": "auto_arima",
+ "group": "week3_classical",
+ "logged": "2026-10-09 13:30:22",
+ "config": {
+  "model": "auto_arima",
+  "notebook": "08_classical_models.ipynb",
+  "split": "val"
+ },
+ "metrics": {
+  "h1/MAE": 0.28378322026866076,
+  "h1/RMSE": 0.5051061114273483,
+  "h1/sMAPE": 0.9212943479174358,
+  "h1/R2": 0.9966375685591916,
+  "h1/R2_delta": 0.022987748741872482,
+  "h1/skill_MAE": 0.009763749974937563,
+  "h1/MAE_ramp": 1.4650872635283032,
+  "h1/MAE_normal": 0.229870345414025,
+  "h1/ramp_F1": 0.09139307897071873,
+  "h5/MAE": 0.41799291577270575,
+  "h5/RMSE": 0.8569694766138749,
+  "h5/sMAPE": 1.4004146657375054,
+  "h5/R2": 0.9903166183406347,
+  "h5/R2_delta": 0.08749813483012414,
+  "h5/skill_MAE": 0.027765585091674483,
+  "h5/MAE_ramp": 2.3818709226123844,
+  "h5/MAE_normal": 0.2988557525506745,
+  "h5/ramp_F1": 0.18493150684931506,
+  "h15/MAE": 0.5884741368372216,
+  "h15/RMSE": 1.132905615136371,
+  "h15/sMAPE": 2.0369142528642152,
+  "h15/R2": 0.9830565285065771,
+  "h15/R2_delta": 0.07575631308778341,
+  "h15/skill_MAE": 0.027071946903055144,
+  "h15/MAE_ramp": 3.056630894935597,
+  "h15/MAE_normal": 0.4176766865406676,
+  "h15/ramp_F1": 0.1035512777962164
+ },
+ "files": [
+  "/Users/aryaneuse/Desktop/Uni Project/datacenter-power-forecasting/reports/classical/val_metrics.csv"
+ ],
+ "wandb": {
+  "mode": "online",
+  "url": "https://wandb.ai/aryan-faghirollahy-uok/datacenter-power-forecasting/runs/yi13f5od"
+ }
+}

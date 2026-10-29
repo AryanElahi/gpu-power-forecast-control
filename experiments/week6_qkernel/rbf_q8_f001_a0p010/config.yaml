@@ -1,0 +1,10 @@
+kind: rbf
+n_qubits: 8
+scale: 0.01
+fraction: 0.01
+thin: 1
+n_layers: 2
+name: rbf_q8_f001_a0p010
+group: week6_qkernel
+input: PCA (train subsample) of the local-scaled 60-minute window
+readout: kernel ridge per horizon

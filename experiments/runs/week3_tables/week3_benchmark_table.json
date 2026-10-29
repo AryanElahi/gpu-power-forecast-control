@@ -1,0 +1,19 @@
+{
+ "name": "week3_benchmark_table",
+ "group": "week3_tables",
+ "logged": "2026-10-09 13:30:59",
+ "config": {
+  "split": "val",
+  "scaling_rnn": "local"
+ },
+ "metrics": {
+  "n_rows": 39
+ },
+ "files": [
+  "/Users/aryaneuse/Desktop/Uni Project/datacenter-power-forecasting/reports/week3/benchmark_val.csv"
+ ],
+ "wandb": {
+  "mode": "online",
+  "url": "https://wandb.ai/aryan-faghirollahy-uok/datacenter-power-forecasting/runs/rv05xrwx"
+ }
+}

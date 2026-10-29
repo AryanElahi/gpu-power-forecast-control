@@ -1,0 +1,10 @@
+kind: lightgbm
+seed: 1
+fraction: 0.05
+cutoff_index: 202852
+name: lightgbm_f005_s1
+group: week6_fraction
+params: notebook 08 tuned (gbm arm); min_data_in_leaf capped at n_train/20
+rounds: early stopping on validation
+max_rounds: 3000
+patience: 50

@@ -1,0 +1,10 @@
+kind: qk
+n_qubits: 4
+scale: 1.0
+fraction: 0.05
+thin: 2
+n_layers: 2
+name: qk_q4_f005t2_a1p000
+group: week6_qkernel
+input: PCA (train subsample) of the local-scaled 60-minute window
+readout: kernel ridge per horizon

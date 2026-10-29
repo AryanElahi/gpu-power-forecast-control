@@ -1,0 +1,10 @@
+kind: qrc
+variant: qrc_q8_d4
+n_qubits: 8
+depth: 4
+scale: 0.09817477042468103
+seed: 1
+fraction: 0.05
+cutoff_index: 202852
+name: qrc_q8_d4_f005_s1
+group: week6_fraction

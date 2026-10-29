@@ -1,0 +1,38 @@
+{
+ "items": [
+  {
+   "item": "[main] hybrid QNN (encoder -> circuit -> decoder, re-uploading, entangling layers, Z readout)",
+   "done": true
+  },
+  {
+   "item": "[main] classical control with matched parameter count (same encoder/decoder)",
+   "done": true
+  },
+  {
+   "item": "[main] quantum reservoir computing with ridge readout (+ raw, random-feature and no-entanglement controls)",
+   "done": true
+  },
+  {
+   "item": "[supp] quantum kernel ridge regression on a small subsample",
+   "done": false
+  },
+  {
+   "item": "[main] epoch time measured and trainable sample size decided",
+   "done": true
+  },
+  {
+   "item": "[main] overfit sanity check (1% check of nb 17 or memorisation check of nb 18)",
+   "done": true
+  },
+  {
+   "item": "[main] models connected to the shared evaluation module (src/evaluation/metrics.py)",
+   "done": true
+  },
+  {
+   "item": "[criterion] two main models end-to-end and in the unified table",
+   "done": true
+  }
+ ],
+ "main_hybrid": "hqnn_noreup_q4_l2",
+ "all_main_done": true
+}

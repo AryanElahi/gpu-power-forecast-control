@@ -1,0 +1,17 @@
+group,model,inputs,device,n_params,n_params_middle,train_s,s_per_epoch,best_epoch,infer_ms_per_sample
+week5_qrc,ctrl_raw_q8,power only,cpu,99,,0.0,,,
+week5_qnn,ctrl_bottleneck_q4_l2,power only,cpu,263,0,2.0,0.2,7.7,0.0006
+week5_qnn,ctrl_mlp_q4_l2,power only,cpu,285,22,5.0,0.3,12.0,0.0004
+week5_qnn,hqnn_noent_noreup_q4_l2,power only,cpu,287,24,61.0,3.5,13.7,0.0045
+week5_qnn,hqnn_noreup_q4_l2,power only,cpu,287,24,70.0,4.2,13.0,0.0041
+week5_qrc,qrc_noent_q8_d4,power only,cpu,483,,77.0,,,
+week5_qrc,qrc_q8_d4,power only,cpu,483,,89.0,,,
+week5_qrc,ctrl_rf_q8_f40,power only,cpu,483,,1.0,,,
+week4_nf,nlinear,power only,cpu,915,,1.0,0.2,3.3,0.0004
+week4_nf,dlinear,power only,cpu,1830,,1.0,0.3,2.0,0.0006
+week4_nf,gru_uni,power only,mps,38019,,255.0,36.4,4.0,0.0291
+week3_rnn,gru,power + calendar,cpu,39363,,538.0,52.1,7.3,0.0651
+week3_rnn,lstm,power + calendar,cpu,52419,,506.0,54.0,6.3,0.0866
+week3_rnn,lstm_minmax,power + calendar,cpu,52419,,217.0,54.2,1.0,0.0818
+week4_nf,patchtst,power only,mps,75215,,203.0,13.3,12.3,0.0143
+week4_nf,nhits,power only,cpu,676301,,20.0,4.6,1.3,0.0055

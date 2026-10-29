@@ -1,0 +1,9 @@
+n_qubits,entangle,s_per_10k,est_min_all_minutes
+2,true,0.02,0.01
+2,false,0.02,0.01
+4,true,0.11,0.06
+4,false,0.1,0.05
+6,true,0.64,0.32
+6,false,0.55,0.28
+8,true,3.08,1.56
+8,false,2.54,1.29

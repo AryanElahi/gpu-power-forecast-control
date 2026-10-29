@@ -1,0 +1,12 @@
+variant,backend,n_params,n_params_encoder,n_params_middle,n_params_decoder,ms_per_train_sample,ms_per_pred_sample,est_epoch_min_full
+hqnn_q4_l2,lightning.qubit,287,248,24,15,3.1266,1.8612,11.57
+hqnn_q2_l2,default.qubit,145,124,12,9,0.012,0.0012,0.04
+hqnn_q2_l4,default.qubit,157,124,24,9,0.0169,0.0017,0.06
+hqnn_q4_l2,default.qubit,287,248,24,15,0.0277,0.004,0.09
+hqnn_q4_l4,default.qubit,311,248,48,15,0.0418,0.0088,0.14
+hqnn_q6_l2,default.qubit,429,372,36,21,0.0699,0.0209,0.24
+hqnn_q6_l4,default.qubit,465,372,72,21,0.1294,0.0527,0.46
+hqnn_q8_l2,default.qubit,571,496,48,27,0.4323,0.1327,1.51
+hqnn_q8_l4,default.qubit,619,496,96,27,0.6628,0.151,2.28
+ctrl_mlp_q4_l2,default.qubit,285,248,22,15,0.005,0.0006,0.02
+ctrl_bottleneck_q4_l2,default.qubit,263,248,0,15,0.0043,0.0005,0.01

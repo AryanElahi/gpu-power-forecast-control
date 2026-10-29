@@ -1,0 +1,4 @@
+# Experiment tracking (src/tracking.py). Every run is also written as JSON to experiments/runs/.
+project: datacenter-power-forecasting
+entity: aryan-faghirollahy-uok
+mode: auto          # online | offline | auto (online, else offline) | disabled

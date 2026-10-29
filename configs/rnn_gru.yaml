@@ -1,0 +1,25 @@
+# GRU direct multi-horizon forecaster (src/models/rnn.py), univariate arm.
+# Architecture values are our choice for the 1-minute protocol. The Alberta paper (arXiv 2503.07756) used
+# 1-second data, a 300-step window and a 90-second horizon; check its exact layer sizes in docs/literature.md
+# (entry 2) / the PDF and record any difference in the notebook 09 comparison table.
+family: rnn
+cell: gru
+group: week3_rnn
+dataset: data/processed/model_dataset.parquet
+dataset_meta: data/processed/model_dataset_meta.json
+scaling: minmax       # minmax (protocol default) | local (window relative to P(t), chosen on validation)
+calendar: true        # minute-mod-5 one-hot + hour sin/cos per step
+covariates: false     # true = covariate arm (1-minute covariate changes per step)
+hidden: 64
+layers: 2
+dropout: 0.1
+loss: mse
+lr: 0.001
+weight_decay: 0.0
+grad_clip: 1.0
+batch: 512
+epochs: 20
+patience: 3
+seed: 0
+threads: 0            # 0 = torch default
+max_train_samples: null   # e.g. 20000 for a quick test

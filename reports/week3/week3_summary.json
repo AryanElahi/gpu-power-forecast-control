@@ -1,0 +1,567 @@
+{
+ "created": "2026-10-09 13:30:59",
+ "scaling_choice": "local",
+ "scaling_table": [
+  {
+   "scaling": "minmax",
+   "val MAE h=1": 0.2852,
+   "val MAE h=5": 0.4343,
+   "val MAE h=15": 0.6043,
+   "mean": 0.4412,
+   "best epoch": 1,
+   "train s": 217
+  },
+  {
+   "scaling": "local",
+   "val MAE h=1": 0.2644,
+   "val MAE h=5": 0.4008,
+   "val MAE h=15": 0.5722,
+   "mean": 0.4125,
+   "best epoch": 6,
+   "train s": 495
+  }
+ ],
+ "runs": {
+  "lstm|0": "lstm_local_s0",
+  "lstm|1": "lstm_local_s1",
+  "lstm|2": "lstm_local_s2",
+  "gru|0": "gru_local_s0",
+  "gru|1": "gru_local_s1",
+  "gru|2": "gru_local_s2"
+ },
+ "alberta": [
+  {
+   "source": "Alberta LSTM (paper)",
+   "resolution": "1 s",
+   "window": "300 steps (5 min)",
+   "horizon": "90 s",
+   "runs": "1",
+   "naive baseline": "none",
+   "R2": 0.9639,
+   "sMAPE %": 2.26
+  },
+  {
+   "source": "our LSTM, h = 1 min",
+   "resolution": "1 min",
+   "window": "60 steps (60 min)",
+   "horizon": "1 min",
+   "runs": "3 seeds",
+   "naive baseline": "persistence",
+   "R2": 0.997,
+   "sMAPE %": 0.87
+  },
+  {
+   "source": "persistence, h = 1 min",
+   "resolution": "1 min",
+   "window": "-",
+   "horizon": "1 min",
+   "runs": "-",
+   "naive baseline": "-",
+   "R2": 0.9966,
+   "sMAPE %": 0.916
+  },
+  {
+   "source": "our LSTM, h = 5 min",
+   "resolution": "1 min",
+   "window": "60 steps (60 min)",
+   "horizon": "5 min",
+   "runs": "3 seeds",
+   "naive baseline": "persistence",
+   "R2": 0.9911,
+   "sMAPE %": 1.355
+  },
+  {
+   "source": "persistence, h = 5 min",
+   "resolution": "1 min",
+   "window": "-",
+   "horizon": "5 min",
+   "runs": "-",
+   "naive baseline": "-",
+   "R2": 0.9894,
+   "sMAPE %": 1.427
+  },
+  {
+   "source": "our LSTM, h = 15 min",
+   "resolution": "1 min",
+   "window": "60 steps (60 min)",
+   "horizon": "15 min",
+   "runs": "3 seeds",
+   "naive baseline": "persistence",
+   "R2": 0.9837,
+   "sMAPE %": 2.005
+  },
+  {
+   "source": "persistence, h = 15 min",
+   "resolution": "1 min",
+   "window": "-",
+   "horizon": "15 min",
+   "runs": "-",
+   "naive baseline": "-",
+   "R2": 0.9817,
+   "sMAPE %": 2.081
+  }
+ ],
+ "refit_demo": [
+  {
+   "h": 1,
+   "blocks": 6,
+   "n": 42575,
+   "MAE fixed (fit on train)": 0.2637,
+   "MAE weekly re-fit": 0.2632,
+   "MAE persistence": 0.2866,
+   "fit sizes": "196700, 201451, 211531, 218611, 228691, 238771"
+  },
+  {
+   "h": 5,
+   "blocks": 6,
+   "n": 42567,
+   "MAE fixed (fit on train)": 0.4097,
+   "MAE weekly re-fit": 0.4096,
+   "MAE persistence": 0.4299,
+   "fit sizes": "196668, 201415, 211495, 218571, 228651, 238731"
+  },
+  {
+   "h": 15,
+   "blocks": 6,
+   "n": 42547,
+   "MAE fixed (fit on train)": 0.5789,
+   "MAE weekly re-fit": 0.5794,
+   "MAE persistence": 0.6048,
+   "fit sizes": "196588, 201325, 211405, 218471, 228551, 238631"
+  }
+ ],
+ "weekly_skill": [
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.3349,
+   "MAE_persistence": 0.4342,
+   "skill_MAE": 0.2288
+  },
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4163,
+   "MAE_persistence": 0.4805,
+   "skill_MAE": 0.1336
+  },
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7080,
+   "MAE": 0.1486,
+   "MAE_persistence": 0.1554,
+   "skill_MAE": 0.0435
+  },
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.209,
+   "MAE_persistence": 0.1875,
+   "skill_MAE": -0.1148
+  },
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.2168,
+   "MAE_persistence": 0.2188,
+   "skill_MAE": 0.0091
+  },
+  {
+   "h": 1,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-30 00:00:00.000000",
+   "n": 503,
+   "MAE": 0.1866,
+   "MAE_persistence": 0.1975,
+   "skill_MAE": 0.0556
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.3283,
+   "MAE_persistence": 0.4342,
+   "skill_MAE": 0.2438
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3894,
+   "MAE_persistence": 0.4805,
+   "skill_MAE": 0.1896
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7080,
+   "MAE": 0.1328,
+   "MAE_persistence": 0.1554,
+   "skill_MAE": 0.1454
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.1943,
+   "MAE_persistence": 0.1875,
+   "skill_MAE": -0.0361
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.2009,
+   "MAE_persistence": 0.2188,
+   "skill_MAE": 0.0817
+  },
+  {
+   "h": 1,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-30 00:00:00.000000",
+   "n": 503,
+   "MAE": 0.1734,
+   "MAE_persistence": 0.1975,
+   "skill_MAE": 0.1221
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.3415,
+   "MAE_persistence": 0.4342,
+   "skill_MAE": 0.2134
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4064,
+   "MAE_persistence": 0.4805,
+   "skill_MAE": 0.1542
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7080,
+   "MAE": 0.1495,
+   "MAE_persistence": 0.1554,
+   "skill_MAE": 0.0377
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.1965,
+   "MAE_persistence": 0.1875,
+   "skill_MAE": -0.048
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.2046,
+   "MAE_persistence": 0.2188,
+   "skill_MAE": 0.0647
+  },
+  {
+   "h": 1,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-30 00:00:00.000000",
+   "n": 503,
+   "MAE": 0.1834,
+   "MAE_persistence": 0.1975,
+   "skill_MAE": 0.0714
+  },
+  {
+   "h": 5,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.4328,
+   "MAE_persistence": 0.5021,
+   "skill_MAE": 0.1381
+  },
+  {
+   "h": 5,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.6173,
+   "MAE_persistence": 0.6676,
+   "skill_MAE": 0.0754
+  },
+  {
+   "h": 5,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7076,
+   "MAE": 0.2801,
+   "MAE_persistence": 0.2785,
+   "skill_MAE": -0.0055
+  },
+  {
+   "h": 5,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3609,
+   "MAE_persistence": 0.3594,
+   "skill_MAE": -0.0042
+  },
+  {
+   "h": 5,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3343,
+   "MAE_persistence": 0.3415,
+   "skill_MAE": 0.0209
+  },
+  {
+   "h": 5,
+   "model": "lightgbm_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.426,
+   "MAE_persistence": 0.5021,
+   "skill_MAE": 0.1516
+  },
+  {
+   "h": 5,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.5808,
+   "MAE_persistence": 0.6676,
+   "skill_MAE": 0.13
+  },
+  {
+   "h": 5,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7076,
+   "MAE": 0.2589,
+   "MAE_persistence": 0.2785,
+   "skill_MAE": 0.0705
+  },
+  {
+   "h": 5,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3393,
+   "MAE_persistence": 0.3594,
+   "skill_MAE": 0.056
+  },
+  {
+   "h": 5,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3104,
+   "MAE_persistence": 0.3415,
+   "skill_MAE": 0.0911
+  },
+  {
+   "h": 5,
+   "model": "gru (seed 0)",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.4389,
+   "MAE_persistence": 0.5021,
+   "skill_MAE": 0.1259
+  },
+  {
+   "h": 5,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.6131,
+   "MAE_persistence": 0.6676,
+   "skill_MAE": 0.0816
+  },
+  {
+   "h": 5,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7076,
+   "MAE": 0.2845,
+   "MAE_persistence": 0.2785,
+   "skill_MAE": -0.0215
+  },
+  {
+   "h": 5,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.3538,
+   "MAE_persistence": 0.3594,
+   "skill_MAE": 0.0154
+  },
+  {
+   "h": 5,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.312,
+   "MAE_persistence": 0.3415,
+   "skill_MAE": 0.0862
+  },
+  {
+   "h": 15,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.5296,
+   "MAE_persistence": 0.5941,
+   "skill_MAE": 0.1086
+  },
+  {
+   "h": 15,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.8068,
+   "MAE_persistence": 0.8621,
+   "skill_MAE": 0.0642
+  },
+  {
+   "h": 15,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7066,
+   "MAE": 0.4923,
+   "MAE_persistence": 0.5039,
+   "skill_MAE": 0.023
+  },
+  {
+   "h": 15,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.5236,
+   "MAE_persistence": 0.5362,
+   "skill_MAE": 0.0236
+  },
+  {
+   "h": 15,
+   "model": "ar_lags_cal_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4933,
+   "MAE_persistence": 0.4983,
+   "skill_MAE": 0.0101
+  },
+  {
+   "h": 15,
+   "model": "lightgbm_cov",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.5232,
+   "MAE_persistence": 0.5941,
+   "skill_MAE": 0.1194
+  },
+  {
+   "h": 15,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.7767,
+   "MAE_persistence": 0.8621,
+   "skill_MAE": 0.0991
+  },
+  {
+   "h": 15,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7066,
+   "MAE": 0.4839,
+   "MAE_persistence": 0.5039,
+   "skill_MAE": 0.0396
+  },
+  {
+   "h": 15,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4919,
+   "MAE_persistence": 0.5362,
+   "skill_MAE": 0.0828
+  },
+  {
+   "h": 15,
+   "model": "lightgbm_cov",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4679,
+   "MAE_persistence": 0.4983,
+   "skill_MAE": 0.0611
+  },
+  {
+   "h": 15,
+   "model": "gru (seed 0)",
+   "block_start": "2021-07-26 00:00:00.000000",
+   "n": 4752,
+   "MAE": 0.5264,
+   "MAE_persistence": 0.5941,
+   "skill_MAE": 0.114
+  },
+  {
+   "h": 15,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-02 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.8065,
+   "MAE_persistence": 0.8621,
+   "skill_MAE": 0.0645
+  },
+  {
+   "h": 15,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-09 00:00:00.000000",
+   "n": 7066,
+   "MAE": 0.5185,
+   "MAE_persistence": 0.5039,
+   "skill_MAE": -0.029
+  },
+  {
+   "h": 15,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-16 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.5179,
+   "MAE_persistence": 0.5362,
+   "skill_MAE": 0.0342
+  },
+  {
+   "h": 15,
+   "model": "gru (seed 0)",
+   "block_start": "2021-08-23 00:00:00.000000",
+   "n": 10080,
+   "MAE": 0.4649,
+   "MAE_persistence": 0.4983,
+   "skill_MAE": 0.0671
+  }
+ ]
+}

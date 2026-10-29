@@ -1,0 +1,1652 @@
+{
+ "main_hybrid": {
+  "n_qubits": 4,
+  "n_layers": 2,
+  "reupload": false,
+  "entangle": true
+ },
+ "qnn_group": "week5_qnn",
+ "qrc_best_scale": {
+  "qrc": 0.09817477042468103,
+  "qrc_noent": 0.19634954084936207,
+  "rf": 0.09817477042468103,
+  "raw": 1.5707963267948966
+ },
+ "fractions": [
+  0.01,
+  0.05,
+  0.2
+ ],
+ "qubits": [
+  2,
+  4,
+  6,
+  8
+ ],
+ "fraction_sizes": [
+  {
+   "fraction": 0.01,
+   "train_origins": 1967,
+   "first_origin": "2021-07-28 08:00:00",
+   "days_covered": 1.4
+  },
+  {
+   "fraction": 0.05,
+   "train_origins": 9835,
+   "first_origin": "2021-07-22 20:52:00",
+   "days_covered": 6.8
+  },
+  {
+   "fraction": 0.2,
+   "train_origins": 39340,
+   "first_origin": "2021-06-30 07:07:00",
+   "days_covered": 29.4
+  },
+  {
+   "fraction": 1.0,
+   "train_origins": 196700,
+   "first_origin": "2021-03-04 00:59:00",
+   "days_covered": 147.7
+  }
+ ],
+ "data_fraction": [
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": -0.02464631114563202,
+   "skill_sd": 0.0016672801723246408,
+   "MAE_mean": 0.29364450130557446,
+   "MAE_ramp": 1.4064368382491645
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": -0.0018620318151097253,
+   "skill_sd": 0.01952424822754326,
+   "MAE_mean": 0.28711495226134115,
+   "MAE_ramp": 1.3415200430987306
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.020265675981801512,
+   "skill_sd": 0.00433169742413421,
+   "MAE_mean": 0.28077356435960305,
+   "MAE_ramp": 1.3701511151527193
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05781134314688385,
+   "skill_sd": 0.0016838569534405345,
+   "MAE_mean": 0.27001367717614283,
+   "MAE_ramp": 1.3963063262943505
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06803720832218414,
+   "skill_sd": 0.002040602824391564,
+   "MAE_mean": 0.2670831351469994,
+   "MAE_ramp": 1.4646291987115871
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.08805577689959913,
+   "skill_sd": 0.003321306012149425,
+   "MAE_mean": 0.26134618716521824,
+   "MAE_ramp": 1.4119565899734052
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.11965855824523985,
+   "skill_sd": 0.0008912133998760888,
+   "MAE_mean": 0.2522894200962634,
+   "MAE_ramp": 1.3319260296214057
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.13052514564081996,
+   "skill_sd": 0.0005302196389924125,
+   "MAE_mean": 0.2491752590418983,
+   "MAE_ramp": 1.3419446037994434
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": -0.035172884103261616,
+   "skill_sd": 0.03187248413487288,
+   "MAE_mean": 0.2966612205705312,
+   "MAE_ramp": 1.4708928887350587
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.050943933232450535,
+   "skill_sd": 0.015068578094796066,
+   "MAE_mean": 0.2719817486342151,
+   "MAE_ramp": 1.3513757524963286
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07152000976388188,
+   "skill_sd": 0.008872810195003923,
+   "MAE_mean": 0.2660850292822057,
+   "MAE_ramp": 1.3450550670616384
+  },
+  {
+   "model": "MLP control",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05577229356668382,
+   "skill_sd": 0.018673707917160436,
+   "MAE_mean": 0.2705980307141415,
+   "MAE_ramp": 1.4323010448422417
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": -0.10677134460012823,
+   "skill_sd": 0.02341335103077045,
+   "MAE_mean": 0.31718000251328987,
+   "MAE_ramp": 1.2876783339080504
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06108225985260448,
+   "skill_sd": 0.02046881948114711,
+   "MAE_mean": 0.2690762935205188,
+   "MAE_ramp": 1.2693466922269017
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.08199122453277452,
+   "skill_sd": 0.007936169774569865,
+   "MAE_mean": 0.26308417464053213,
+   "MAE_ramp": 1.3060823418188114
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.11247854612309623,
+   "skill_sd": 0.005062362047613891,
+   "MAE_mean": 0.2543470775103788,
+   "MAE_ramp": 1.324269589776056
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.03483264837760277,
+   "skill_sd": 0.0030943997547264483,
+   "MAE_mean": 0.2765989420551373,
+   "MAE_ramp": 1.5003352630414328
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.03895731600139948,
+   "skill_sd": 0.005244265248077525,
+   "MAE_mean": 0.2754168893270239,
+   "MAE_ramp": 1.4380243980826384
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05212238706412683,
+   "skill_sd": 0.0011532401678796063,
+   "MAE_mean": 0.2716440257693103,
+   "MAE_ramp": 1.5038686763968976
+  },
+  {
+   "model": "QRC",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07456236339281867,
+   "skill_sd": 0.001245125424252651,
+   "MAE_mean": 0.2652131475368203,
+   "MAE_ramp": 1.4204138535496067
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.03836276196821612,
+   "skill_sd": 0.00480535800802066,
+   "MAE_mean": 0.2755872774118433,
+   "MAE_ramp": 1.4928669704411497
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.03727830406156296,
+   "skill_sd": 0.004286711189293404,
+   "MAE_mean": 0.27589806279966167,
+   "MAE_ramp": 1.4274725801494377
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05605065556565647,
+   "skill_sd": 0.0011229326611488645,
+   "MAE_mean": 0.27051825736261365,
+   "MAE_ramp": 1.4513624121874986
+  },
+  {
+   "model": "RF control",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07689199102851467,
+   "skill_sd": 0.0017419594304204718,
+   "MAE_mean": 0.2645455197535838,
+   "MAE_ramp": 1.4151702300779434
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.01,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": -0.026703302578985826,
+   "skill_sd": 0.05208298307968667,
+   "MAE_mean": 0.2942339966436894,
+   "MAE_ramp": 1.5065590541092462
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.05,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06014000301187302,
+   "skill_sd": 0.016718843037244073,
+   "MAE_mean": 0.2693463267379214,
+   "MAE_ramp": 1.3219014354674756
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06301983941950413,
+   "skill_sd": 0.020061413627119693,
+   "MAE_mean": 0.268521019393756,
+   "MAE_ramp": 1.3469692449205153
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 1.0,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07431813325081238,
+   "skill_sd": 0.013460724510017619,
+   "MAE_mean": 0.2652831393354274,
+   "MAE_ramp": 1.415969277737245
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": -0.0792476640938639,
+   "skill_sd": 0.00749793783410438,
+   "MAE_mean": 0.4640011411219309,
+   "MAE_ramp": 2.2265748747314293
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.05059223878029917,
+   "skill_sd": 0.005895224184240971,
+   "MAE_mean": 0.40817904847246034,
+   "MAE_ramp": 2.200433701260487
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.06384001524409182,
+   "skill_sd": 0.0027919351358751923,
+   "MAE_mean": 0.4024834295695563,
+   "MAE_ramp": 2.2280049264000836
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.06584611250458032,
+   "skill_sd": 0.0012053035831112201,
+   "MAE_mean": 0.40162094781579705,
+   "MAE_ramp": 2.2282480171554155
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.030027975588449385,
+   "skill_sd": 0.0015977182010998862,
+   "MAE_mean": 0.4170202458220616,
+   "MAE_ramp": 2.5379146739297944
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.05496481932270891,
+   "skill_sd": 0.0011343890672608505,
+   "MAE_mean": 0.4062991441383341,
+   "MAE_ramp": 2.462385632073777
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.07827445023663408,
+   "skill_sd": 0.0004986426830442262,
+   "MAE_mean": 0.3962776303532909,
+   "MAE_ramp": 2.293098780744314
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.08494114246695499,
+   "skill_sd": 0.0002723160548551746,
+   "MAE_mean": 0.39341141817114567,
+   "MAE_ramp": 2.2746089369561915
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": -0.001159128850278431,
+   "skill_sd": 0.017184121740995793,
+   "MAE_mean": 0.43042852320759417,
+   "MAE_ramp": 2.5527055142439647
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.030665417629490783,
+   "skill_sd": 0.003341994893568218,
+   "MAE_mean": 0.41674619025142423,
+   "MAE_ramp": 2.467471681969856
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04098936270187289,
+   "skill_sd": 0.00565769974347321,
+   "MAE_mean": 0.41230761470121685,
+   "MAE_ramp": 2.379702710040219
+  },
+  {
+   "model": "MLP control",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.052598509551940675,
+   "skill_sd": 0.0024721512182629204,
+   "MAE_mean": 0.4073164921210201,
+   "MAE_ramp": 2.383983854863816
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": -0.16280294236623308,
+   "skill_sd": 0.017159132066677376,
+   "MAE_mean": 0.49992407684372453,
+   "MAE_ramp": 2.1376464674220554
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04373520824547924,
+   "skill_sd": 0.0064667360046384,
+   "MAE_mean": 0.4111270928358787,
+   "MAE_ramp": 2.1623742027070025
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.060813618872928764,
+   "skill_sd": 0.007579254830203412,
+   "MAE_mean": 0.4037845687023298,
+   "MAE_ramp": 2.158766236097884
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.0721365576041975,
+   "skill_sd": 0.00423721050609124,
+   "MAE_mean": 0.3989164956298034,
+   "MAE_ramp": 2.2833051264528152
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.019283379089903,
+   "skill_sd": 0.008181482805329588,
+   "MAE_mean": 0.4216396721151044,
+   "MAE_ramp": 2.535760589899389
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.024471608034677628,
+   "skill_sd": 0.002767999140447626,
+   "MAE_mean": 0.41940909591756553,
+   "MAE_ramp": 2.5059038307209005
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.03853452594510335,
+   "skill_sd": 0.0003565157107612611,
+   "MAE_mean": 0.4133630231068171,
+   "MAE_ramp": 2.4464513367173986
+  },
+  {
+   "model": "QRC",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041046443100415386,
+   "skill_sd": 0.0005691251623272649,
+   "MAE_mean": 0.41228307411526927,
+   "MAE_ramp": 2.4262187627865472
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.020380071718988035,
+   "skill_sd": 0.004407654332631372,
+   "MAE_mean": 0.4211681708570658,
+   "MAE_ramp": 2.531292024920722
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.02614178295894117,
+   "skill_sd": 0.001201467062926242,
+   "MAE_mean": 0.4186910373138601,
+   "MAE_ramp": 2.5665439703560238
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.03758418433239855,
+   "skill_sd": 0.0001367929547629677,
+   "MAE_mean": 0.4137716036462255,
+   "MAE_ramp": 2.4368068902626323
+  },
+  {
+   "model": "RF control",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041842082578566364,
+   "skill_sd": 0.0011261408293088467,
+   "MAE_mean": 0.4119410046922202,
+   "MAE_ramp": 2.4108040912623356
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.01,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": -0.029274239300093985,
+   "skill_sd": 0.026597261665149426,
+   "MAE_mean": 0.44251605766840435,
+   "MAE_ramp": 2.5339145820965
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.05,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.040561881107799236,
+   "skill_sd": 0.012343349783097873,
+   "MAE_mean": 0.4124914019393624,
+   "MAE_ramp": 2.4152391392072765
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.048987779131061115,
+   "skill_sd": 0.006980083843264245,
+   "MAE_mean": 0.4088688540962285,
+   "MAE_ramp": 2.3796772418729186
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 1.0,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.0547582878769558,
+   "skill_sd": 0.0023614711579718096,
+   "MAE_mean": 0.4063879382397209,
+   "MAE_ramp": 2.4037236967209323
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": -0.08703468313217792,
+   "skill_sd": 0.0012702842786955122,
+   "MAE_mean": 0.6574913682796139,
+   "MAE_ramp": 2.9686052175380553
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.024851998287619897,
+   "skill_sd": 0.013660093633986235,
+   "MAE_mean": 0.5898168695718086,
+   "MAE_ramp": 2.8532323023846806
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.054073367693554496,
+   "skill_sd": 0.0008110012104953498,
+   "MAE_mean": 0.5721423662170929,
+   "MAE_ramp": 2.9007638212988645
+  },
+  {
+   "model": "GRU (univariate)",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.05396441277663507,
+   "skill_sd": 0.002094868537092148,
+   "MAE_mean": 0.5722082674422495,
+   "MAE_ramp": 2.8445400336581734
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.005064044730243615,
+   "skill_sd": 0.0011262228952068564,
+   "MAE_mean": 0.6017855848867649,
+   "MAE_ramp": 3.2481062241353604
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.026720105664332732,
+   "skill_sd": 0.0005368118337603269,
+   "MAE_mean": 0.5886869475055971,
+   "MAE_ramp": 3.1853881434877356
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.047030145929632027,
+   "skill_sd": 0.0010207939347363776,
+   "MAE_mean": 0.5764024487945086,
+   "MAE_ramp": 3.047195009104698
+  },
+  {
+   "model": "LightGBM",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.06448181569409055,
+   "skill_sd": 0.0005854314040328122,
+   "MAE_mean": 0.5658468313793075,
+   "MAE_ramp": 2.913459146676263
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": -0.02081100371278392,
+   "skill_sd": 0.003936527116939103,
+   "MAE_mean": 0.6174360708087848,
+   "MAE_ramp": 3.189688633719552
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.025889425289822927,
+   "skill_sd": 0.002205497563114738,
+   "MAE_mean": 0.5891893833381556,
+   "MAE_ramp": 3.146598259585265
+  },
+  {
+   "model": "MLP control",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03729779124602006,
+   "skill_sd": 0.0035334836842741578,
+   "MAE_mean": 0.5822890495596956,
+   "MAE_ramp": 3.071510840093659
+  },
+  {
+   "model": "MLP control",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04129822881330395,
+   "skill_sd": 0.002199368777607445,
+   "MAE_mean": 0.5798693906374505,
+   "MAE_ramp": 3.0652618104849636
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": -0.13470268856078485,
+   "skill_sd": 0.007323313615097713,
+   "MAE_mean": 0.6863232929631099,
+   "MAE_ramp": 2.8215037930707805
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.019223427071895394,
+   "skill_sd": 0.016266709356525758,
+   "MAE_mean": 0.5932213027950638,
+   "MAE_ramp": 2.8212456862896924
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04096232571779727,
+   "skill_sd": 0.005193078185290152,
+   "MAE_mean": 0.5800725611427721,
+   "MAE_ramp": 2.8182518651365167
+  },
+  {
+   "model": "PatchTST",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.05869196952370148,
+   "skill_sd": 0.0011389314038036048,
+   "MAE_mean": 0.5693488115274742,
+   "MAE_ramp": 2.890220610816987
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.0017944417602905327,
+   "skill_sd": 0.009473579402100309,
+   "MAE_mean": 0.603763199551507,
+   "MAE_ramp": 3.196148071730645
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.007023546046174167,
+   "skill_sd": 0.0018160668911371264,
+   "MAE_mean": 0.6006003833275612,
+   "MAE_ramp": 3.2478505757648435
+  },
+  {
+   "model": "QRC",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.02944018846984627,
+   "skill_sd": 0.0006321393039551502,
+   "MAE_mean": 0.5870417093237962,
+   "MAE_ramp": 3.1026156122492097
+  },
+  {
+   "model": "QRC",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.030641597388347225,
+   "skill_sd": 0.0009500164167187104,
+   "MAE_mean": 0.5863150388633722,
+   "MAE_ramp": 3.0941767919546685
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.00222562732537146,
+   "skill_sd": 0.0052431650288528074,
+   "MAE_mean": 0.6035023975811867,
+   "MAE_ramp": 3.1924310840684442
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.008486694739084552,
+   "skill_sd": 0.0006014491692487926,
+   "MAE_mean": 0.5997153999401624,
+   "MAE_ramp": 3.2475023891824915
+  },
+  {
+   "model": "RF control",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.02739756525396882,
+   "skill_sd": 0.0003058965930277615,
+   "MAE_mean": 0.5882771870449093,
+   "MAE_ramp": 3.1019087468247357
+  },
+  {
+   "model": "RF control",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03012942960651266,
+   "skill_sd": 0.0007185531686980224,
+   "MAE_mean": 0.5866248228112926,
+   "MAE_ramp": 3.084560956131398
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.01,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": -0.003896591544634139,
+   "skill_sd": 0.00803794797151359,
+   "MAE_mean": 0.6072054128797867,
+   "MAE_ramp": 3.237172800351247
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.05,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03075241356485181,
+   "skill_sd": 0.013512340940954038,
+   "MAE_mean": 0.5862480118580263,
+   "MAE_ramp": 3.098242629510415
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 0.2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.039653360511851164,
+   "skill_sd": 0.004502946071003126,
+   "MAE_mean": 0.5808642868693221,
+   "MAE_ramp": 3.0850446683464963
+  },
+  {
+   "model": "hybrid QNN",
+   "fraction": 1.0,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.0433286760567011,
+   "skill_sd": 0.0023755591051467873,
+   "MAE_mean": 0.5786412775358206,
+   "MAE_ramp": 3.0835939239360832
+  }
+ ],
+ "qubit_sweep": [
+  {
+   "model": "MLP control",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05185055400758276,
+   "skill_sd": 0.014982941240494886,
+   "n_params": 145
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05577229356668382,
+   "skill_sd": 0.018673707917160436,
+   "n_params": 285
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.057245676133406954,
+   "skill_sd": 0.015438837965315364,
+   "n_params": 425
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.057286273844022996,
+   "skill_sd": 0.014033071453711318,
+   "n_params": 565
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.051348952878709886,
+   "skill_sd": 0.0002566180277525764,
+   "n_params": 99
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06416068610873993,
+   "skill_sd": 0.000489581625560538,
+   "n_params": 243
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07299977967911968,
+   "skill_sd": 0.0012091935585118087,
+   "n_params": 363
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07456236339281867,
+   "skill_sd": 0.001245125424252651,
+   "n_params": 483
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.050900955280880344,
+   "skill_sd": 0.000214601613972102,
+   "n_params": 99
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06375804870693587,
+   "skill_sd": 7.23282169813186e-05,
+   "n_params": 243
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.0756465254570261,
+   "skill_sd": 0.0006385933067446885,
+   "n_params": 363
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07565612102814549,
+   "skill_sd": 0.00022394014617338248,
+   "n_params": 483
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.054053183496582946,
+   "skill_sd": 0.0021292248651558726,
+   "n_params": 99
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06346101408186422,
+   "skill_sd": 0.0004509357435188527,
+   "n_params": 243
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07356826619118835,
+   "skill_sd": 0.0011603096849547557,
+   "n_params": 363
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07689199102851467,
+   "skill_sd": 0.0017419594304204718,
+   "n_params": 483
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05641541191991221,
+   "skill_sd": 0.020344155719145527,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.07431813325081238,
+   "skill_sd": 0.013460724510017619,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05489570762300189,
+   "skill_sd": 0.027027438148248536,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.05319816120524105,
+   "skill_sd": 0.0017678120121870499,
+   "n_params": 571
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.06556670188037535,
+   "skill_sd": 0.016496068711882857,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.08636739582572739,
+   "skill_sd": 0.006198371004134752,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.09382360647953747,
+   "skill_sd": 0.0026100972871118504,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 3,
+   "skill_mean": 0.09009249026548265,
+   "skill_sd": 0.0033342746370399433,
+   "n_params": 571
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 2,
+   "h": 1,
+   "n_seeds": 1,
+   "skill_mean": 0.04413446709267599,
+   "skill_sd": null,
+   "n_params": 27
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 4,
+   "h": 1,
+   "n_seeds": 1,
+   "skill_mean": 0.0509817899463747,
+   "skill_sd": null,
+   "n_params": 51
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 6,
+   "h": 1,
+   "n_seeds": 1,
+   "skill_mean": 0.05713865668077622,
+   "skill_sd": null,
+   "n_params": 75
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 8,
+   "h": 1,
+   "n_seeds": 1,
+   "skill_mean": 0.0578114761770413,
+   "skill_sd": null,
+   "n_params": 99
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04476635152349976,
+   "skill_sd": 0.0011770863629242535,
+   "n_params": 145
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.052598509551940675,
+   "skill_sd": 0.0024721512182629204,
+   "n_params": 285
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.053520348905045055,
+   "skill_sd": 0.006917641158597721,
+   "n_params": 425
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.05472894183179947,
+   "skill_sd": 0.0046692116944965405,
+   "n_params": 565
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.038532388899587953,
+   "skill_sd": 0.00012094791130345318,
+   "n_params": 99
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041227488716250225,
+   "skill_sd": 0.00046761969047757346,
+   "n_params": 243
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04332568530714601,
+   "skill_sd": 0.0011236297824019543,
+   "n_params": 363
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041046443100415386,
+   "skill_sd": 0.0005691251623272649,
+   "n_params": 483
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.03752424839206773,
+   "skill_sd": 0.0004377725669750678,
+   "n_params": 99
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04014724423376189,
+   "skill_sd": 0.0005448491089910112,
+   "n_params": 243
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04138406959399924,
+   "skill_sd": 0.0002346002841570094,
+   "n_params": 363
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041135064299272196,
+   "skill_sd": 0.0001609440845310452,
+   "n_params": 483
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04216631279786202,
+   "skill_sd": 0.0025381636445681367,
+   "n_params": 99
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04349529816016262,
+   "skill_sd": 0.0023125856688596008,
+   "n_params": 243
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04426704124292147,
+   "skill_sd": 0.0018701518862239762,
+   "n_params": 363
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.041842082578566364,
+   "skill_sd": 0.0011261408293088467,
+   "n_params": 483
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.049399262629497266,
+   "skill_sd": 0.004286861497149789,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.0547582878769558,
+   "skill_sd": 0.0023614711579718096,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04972012487874474,
+   "skill_sd": 0.004543370261815552,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.05395064382595305,
+   "skill_sd": 0.004323766039583675,
+   "n_params": 571
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.04911841066691288,
+   "skill_sd": 0.002536166503186274,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.053616295082522414,
+   "skill_sd": 0.003394887500241418,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.05105674768659533,
+   "skill_sd": 0.0020144670151181834,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 3,
+   "skill_mean": 0.053561381740189686,
+   "skill_sd": 0.0017485501128053013,
+   "n_params": 571
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 2,
+   "h": 5,
+   "n_seeds": 1,
+   "skill_mean": 0.03120125337421964,
+   "skill_sd": null,
+   "n_params": 27
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 4,
+   "h": 5,
+   "n_seeds": 1,
+   "skill_mean": 0.03150641799461895,
+   "skill_sd": null,
+   "n_params": 51
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 6,
+   "h": 5,
+   "n_seeds": 1,
+   "skill_mean": 0.03206877420726628,
+   "skill_sd": null,
+   "n_params": 75
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 8,
+   "h": 5,
+   "n_seeds": 1,
+   "skill_mean": 0.03212039539782263,
+   "skill_sd": null,
+   "n_params": 99
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03340309124372479,
+   "skill_sd": 0.0018085494003390852,
+   "n_params": 145
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04129822881330395,
+   "skill_sd": 0.002199368777607445,
+   "n_params": 285
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04412383103562504,
+   "skill_sd": 0.004356937490187536,
+   "n_params": 425
+  },
+  {
+   "model": "MLP control",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04462067029307115,
+   "skill_sd": 0.002730716685835518,
+   "n_params": 565
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.028643133679615723,
+   "skill_sd": 0.00023379313230642237,
+   "n_params": 99
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.031933601727801096,
+   "skill_sd": 0.0008751028750289039,
+   "n_params": 243
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.032272329895863816,
+   "skill_sd": 0.0009048871700365395,
+   "n_params": 363
+  },
+  {
+   "model": "QRC",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.030641597388347225,
+   "skill_sd": 0.0009500164167187104,
+   "n_params": 483
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.02709598357383099,
+   "skill_sd": 0.0005284739117096755,
+   "n_params": 99
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.02894276623896101,
+   "skill_sd": 0.001028740997897525,
+   "n_params": 243
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.029911227462497563,
+   "skill_sd": 0.00011234919766658822,
+   "n_params": 363
+  },
+  {
+   "model": "QRC, no entanglement",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.029075818605220755,
+   "skill_sd": 0.0004397765933264671,
+   "n_params": 483
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03171208637087638,
+   "skill_sd": 0.0022461456352296074,
+   "n_params": 99
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.033396042040022,
+   "skill_sd": 0.001940286769122549,
+   "n_params": 243
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03351736708198957,
+   "skill_sd": 0.0020650111020125523,
+   "n_params": 363
+  },
+  {
+   "model": "RF control",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03012942960651266,
+   "skill_sd": 0.0007185531686980224,
+   "n_params": 483
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.0376385251066648,
+   "skill_sd": 0.003548726281586371,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.0433286760567011,
+   "skill_sd": 0.0023755591051467873,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04210554161010235,
+   "skill_sd": 0.003556878234058069,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid QNN",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04311122918789242,
+   "skill_sd": 0.005112281666468483,
+   "n_params": 571
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.03787693255849626,
+   "skill_sd": 0.0017352575424465064,
+   "n_params": 145
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.04130860558805064,
+   "skill_sd": 0.0024295075653830256,
+   "n_params": 287
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.041973902550246654,
+   "skill_sd": 0.0007075583937153106,
+   "n_params": 429
+  },
+  {
+   "model": "hybrid, no entanglement",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 3,
+   "skill_mean": 0.043689835148529386,
+   "skill_sd": 0.00237145919663685,
+   "n_params": 571
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 2,
+   "h": 15,
+   "n_seeds": 1,
+   "skill_mean": 0.021001103347066508,
+   "skill_sd": null,
+   "n_params": 27
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 4,
+   "h": 15,
+   "n_seeds": 1,
+   "skill_mean": 0.021115405597543657,
+   "skill_sd": null,
+   "n_params": 51
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 6,
+   "h": 15,
+   "n_seeds": 1,
+   "skill_mean": 0.021300295053505613,
+   "skill_sd": null,
+   "n_params": 75
+  },
+  {
+   "model": "raw control",
+   "n_qubits": 8,
+   "h": 15,
+   "n_seeds": 1,
+   "skill_mean": 0.021262502058532085,
+   "skill_sd": null,
+   "n_params": 99
+  }
+ ]
+}

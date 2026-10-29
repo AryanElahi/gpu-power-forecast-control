@@ -1,0 +1,857 @@
+{
+ "settings": [
+  [
+   "exact",
+   {}
+  ],
+  [
+   "shots 1024",
+   {
+    "shots": 1024
+   }
+  ],
+  [
+   "depol 1e-4 / 1e-3",
+   {
+    "p1": 0.0001,
+    "p2": 0.001
+   }
+  ],
+  [
+   "depol 1e-3 / 1e-2",
+   {
+    "p1": 0.001,
+    "p2": 0.01
+   }
+  ],
+  [
+   "depol 3e-3 / 3e-2",
+   {
+    "p1": 0.003,
+    "p2": 0.03
+   }
+  ],
+  [
+   "depol 1e-2 / 1e-1",
+   {
+    "p1": 0.01,
+    "p2": 0.1
+   }
+  ],
+  [
+   "Heron r2-like (marrakesh)",
+   {
+    "p1": 0.0003,
+    "p2": 0.003,
+    "p_ro": 0.0125,
+    "shots": 1024
+   }
+  ],
+  [
+   "Heron r1-like (torino)",
+   {
+    "p1": 0.0004,
+    "p2": 0.004,
+    "p_ro": 0.0241,
+    "shots": 1024
+   }
+  ]
+ ],
+ "main_hybrid": "hqnn_noreup_q4_l2",
+ "noise": [
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "exact",
+   "n_seeds": 3,
+   "skill_h1": 0.06375804870693587,
+   "skill_h5": 0.04014724423376189,
+   "skill_h15": 0.02894276623896101,
+   "sd_h1": 7.23282169813186e-05,
+   "sd_h5": 0.0005448491089910112,
+   "sd_h15": 0.001028740997897525,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "shots 1024",
+   "n_seeds": 3,
+   "skill_h1": -42.05058211341106,
+   "skill_h5": -57.22315497954421,
+   "skill_h15": -57.21300940526999,
+   "sd_h1": 22.254722555918555,
+   "sd_h5": 53.72156274149165,
+   "sd_h15": 56.60928532051143,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "depol 1e-4 / 1e-3",
+   "n_seeds": 3,
+   "skill_h1": 0.06420601672987754,
+   "skill_h5": 0.03990968298800882,
+   "skill_h15": 0.027787068961146133,
+   "sd_h1": 0.00029014114100831684,
+   "sd_h5": 0.00038439103337607094,
+   "sd_h15": 0.0009688293243603702,
+   "p1": 0.0001,
+   "p2": 0.001
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "depol 1e-3 / 1e-2",
+   "n_seeds": 3,
+   "skill_h1": 0.049709888620700436,
+   "skill_h5": 0.010086985743390916,
+   "skill_h15": -0.010949405930235153,
+   "sd_h1": 0.00276430474709518,
+   "sd_h5": 0.0017462980011487374,
+   "sd_h15": 0.0025142651266606315,
+   "p1": 0.001,
+   "p2": 0.01
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "depol 3e-3 / 3e-2",
+   "n_seeds": 3,
+   "skill_h1": -0.17323297479338554,
+   "skill_h5": -0.35161561593790197,
+   "skill_h15": -0.39026175870307567,
+   "sd_h1": 0.01832737402732683,
+   "sd_h5": 0.009133251546511633,
+   "sd_h15": 0.06409908944078388,
+   "p1": 0.003,
+   "p2": 0.03
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "depol 1e-2 / 1e-1",
+   "n_seeds": 3,
+   "skill_h1": -3.848639539092757,
+   "skill_h5": -5.329114078643994,
+   "skill_h15": -5.561522651208629,
+   "sd_h1": 0.30211185803302265,
+   "sd_h5": 0.06061871074690359,
+   "sd_h15": 1.105543318443184,
+   "p1": 0.01,
+   "p2": 0.1
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "Heron r2-like (marrakesh)",
+   "n_seeds": 3,
+   "skill_h1": -42.92454079428896,
+   "skill_h5": -58.940548275103986,
+   "skill_h15": -58.74030919028524,
+   "sd_h1": 22.25005529958572,
+   "sd_h5": 56.03400878346018,
+   "sd_h15": 58.717445042404705,
+   "p1": 0.0003,
+   "p2": 0.003
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_noent_q4_d4",
+   "setting": "Heron r1-like (torino)",
+   "n_seeds": 3,
+   "skill_h1": -43.138417256645084,
+   "skill_h5": -57.82434585872422,
+   "skill_h15": -57.65195703284969,
+   "sd_h1": 22.118555857885653,
+   "sd_h5": 54.037420044820095,
+   "sd_h15": 56.61832117538963,
+   "p1": 0.0004,
+   "p2": 0.004
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "exact",
+   "n_seeds": 3,
+   "skill_h1": 0.06416068610873993,
+   "skill_h5": 0.041227488716250225,
+   "skill_h15": 0.031933601727801096,
+   "sd_h1": 0.000489581625560538,
+   "sd_h5": 0.00046761969047757346,
+   "sd_h15": 0.0008751028750289039,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "shots 1024",
+   "n_seeds": 3,
+   "skill_h1": -115.39356724899339,
+   "skill_h5": -213.1421116027266,
+   "skill_h15": -86.57078454621528,
+   "sd_h1": 101.26474016969364,
+   "sd_h5": 53.30642963110958,
+   "sd_h15": 35.34488004143248,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "depol 1e-4 / 1e-3",
+   "n_seeds": 3,
+   "skill_h1": -17.471943350122338,
+   "skill_h5": -14.307560873248372,
+   "skill_h15": -3.2726568867961032,
+   "sd_h1": 17.198267183757217,
+   "sd_h5": 9.732840144568273,
+   "sd_h15": 3.972411976645039,
+   "p1": 0.0001,
+   "p2": 0.001
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "depol 1e-3 / 1e-2",
+   "n_seeds": 3,
+   "skill_h1": -171.1249240139476,
+   "skill_h5": -142.20969723833562,
+   "skill_h15": -36.18798173991689,
+   "sd_h1": 160.6912453912896,
+   "sd_h5": 95.59281135994465,
+   "sd_h15": 40.013342619711516,
+   "p1": 0.001,
+   "p2": 0.01
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "depol 3e-3 / 3e-2",
+   "n_seeds": 3,
+   "skill_h1": -444.67775819906046,
+   "skill_h5": -369.37612729538563,
+   "skill_h15": -100.78570320744807,
+   "sd_h1": 403.98595509431635,
+   "sd_h5": 272.3575425054183,
+   "sd_h15": 104.77470540751384,
+   "p1": 0.003,
+   "p2": 0.03
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "depol 1e-2 / 1e-1",
+   "n_seeds": 3,
+   "skill_h1": -870.1453477489143,
+   "skill_h5": -723.9096002709779,
+   "skill_h15": -371.0873188456887,
+   "sd_h1": 693.0777636220976,
+   "sd_h5": 747.5161372976642,
+   "sd_h15": 169.5333826278344,
+   "p1": 0.01,
+   "p2": 0.1
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "Heron r2-like (marrakesh)",
+   "n_seeds": 3,
+   "skill_h1": -125.02955423277109,
+   "skill_h5": -229.4760483714606,
+   "skill_h15": -95.77520330342811,
+   "sd_h1": 101.5120123258216,
+   "sd_h5": 65.76585819537799,
+   "sd_h15": 29.01533205800044,
+   "p1": 0.0003,
+   "p2": 0.003
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "Heron r1-like (torino)",
+   "n_seeds": 3,
+   "skill_h1": -130.80163317830156,
+   "skill_h5": -268.08209891485785,
+   "skill_h15": -108.93548750438363,
+   "sd_h1": 99.17921784535781,
+   "sd_h5": 110.89429267210657,
+   "sd_h15": 23.489164919966186,
+   "p1": 0.0004,
+   "p2": 0.004
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q4_d4",
+   "setting": "Heron r2-like (noise-aware readout)",
+   "n_seeds": 1,
+   "skill_h1": 0.016321962001441093,
+   "skill_h5": 0.010865669516875842,
+   "skill_h15": 0.008540685890220168,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.0003,
+   "p2": 0.003
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q8_d4",
+   "setting": "exact",
+   "n_seeds": 3,
+   "skill_h1": 0.07456236339281867,
+   "skill_h5": 0.041046443100415386,
+   "skill_h15": 0.030641597388347225,
+   "sd_h1": 0.001245125424252651,
+   "sd_h5": 0.0005691251623272649,
+   "sd_h15": 0.0009500164167187104,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q8_d4",
+   "setting": "shots 1024",
+   "n_seeds": 3,
+   "skill_h1": -252.85184076339988,
+   "skill_h5": -97.05298675565456,
+   "skill_h15": -23.096787612795538,
+   "sd_h1": 49.604386933667094,
+   "sd_h5": 124.92689164057835,
+   "sd_h15": 20.102621269889923,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q8_d4",
+   "setting": "readout 1.25e-2 + shots",
+   "n_seeds": 3,
+   "skill_h1": -327.3527019909654,
+   "skill_h5": -99.16811115942568,
+   "skill_h15": -23.692483132404476,
+   "sd_h1": 52.6183378009025,
+   "sd_h5": 126.08963483098263,
+   "sd_h15": 19.49057455109023,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q8_d4",
+   "setting": "readout 2.41e-2 + shots",
+   "n_seeds": 3,
+   "skill_h1": -489.835679283757,
+   "skill_h5": -105.06213935745109,
+   "skill_h15": -26.649260685094276,
+   "sd_h1": 100.12136282429408,
+   "sd_h5": 128.71048138066303,
+   "sd_h15": 20.522614449683743,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "QRC",
+   "model": "qrc_q8_d4",
+   "setting": "shots 1024 (noise-aware readout)",
+   "n_seeds": 3,
+   "skill_h1": 0.018689124008691754,
+   "skill_h5": 0.009338306676407782,
+   "skill_h15": 0.006617110230113428,
+   "sd_h1": 0.004721723458557002,
+   "sd_h5": 0.00280073523890023,
+   "sd_h15": 0.0017833966550742045,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "exact",
+   "n_seeds": 1,
+   "skill_h1": 0.07922935470331904,
+   "skill_h5": 0.057327956048434214,
+   "skill_h15": 0.04389497949084353,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "shots 1024",
+   "n_seeds": 1,
+   "skill_h1": 0.07725881138077839,
+   "skill_h5": 0.05641529531106526,
+   "skill_h15": 0.04340932729224156,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "depol 1e-3 / 1e-2",
+   "n_seeds": 1,
+   "skill_h1": 0.07960323770117927,
+   "skill_h5": 0.057446805928899614,
+   "skill_h15": 0.043910347128068405,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.001,
+   "p2": 0.01
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "depol 1e-2 / 1e-1",
+   "n_seeds": 1,
+   "skill_h1": 0.08223072841331536,
+   "skill_h5": 0.05823931320924958,
+   "skill_h15": 0.04389741479044473,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.01,
+   "p2": 0.1
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "Heron r2-like (marrakesh)",
+   "n_seeds": 1,
+   "skill_h1": 0.07904856770389312,
+   "skill_h5": 0.05713800166283789,
+   "skill_h15": 0.04346884285443309,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.0003,
+   "p2": 0.003
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "setting": "Heron r1-like (torino)",
+   "n_seeds": 1,
+   "skill_h1": 0.07986404775129696,
+   "skill_h5": 0.05750988654299649,
+   "skill_h15": 0.04337341627810254,
+   "sd_h1": null,
+   "sd_h5": null,
+   "sd_h15": null,
+   "p1": 0.0004,
+   "p2": 0.004
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "exact",
+   "n_seeds": 3,
+   "skill_h1": 0.07431813325081238,
+   "skill_h5": 0.0547582878769558,
+   "skill_h15": 0.0433286760567011,
+   "sd_h1": 0.013460724510017619,
+   "sd_h5": 0.0023614711579718096,
+   "sd_h15": 0.0023755591051467873,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "shots 1024",
+   "n_seeds": 3,
+   "skill_h1": 0.06621587789597994,
+   "skill_h5": 0.05109497929989996,
+   "skill_h15": 0.040867357222948396,
+   "sd_h1": 0.0185302029354362,
+   "sd_h5": 0.002180256351514793,
+   "sd_h15": 0.0020600103999083635,
+   "p1": 0.0,
+   "p2": 0.0
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "depol 1e-4 / 1e-3",
+   "n_seeds": 3,
+   "skill_h1": 0.07494933321135311,
+   "skill_h5": 0.05496959286347854,
+   "skill_h15": 0.04329886262339814,
+   "sd_h1": 0.013675395958173265,
+   "sd_h5": 0.002283216615516021,
+   "sd_h15": 0.002338345955727193,
+   "p1": 0.0001,
+   "p2": 0.001
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "depol 1e-3 / 1e-2",
+   "n_seeds": 3,
+   "skill_h1": 0.07694968584327384,
+   "skill_h5": 0.05566575946165597,
+   "skill_h15": 0.042264500018627506,
+   "sd_h1": 0.013751536371287903,
+   "sd_h5": 0.0014809417692398155,
+   "sd_h15": 0.0021425886943961915,
+   "p1": 0.001,
+   "p2": 0.01
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "depol 3e-3 / 3e-2",
+   "n_seeds": 3,
+   "skill_h1": 0.06254137636584063,
+   "skill_h5": 0.04980032169387916,
+   "skill_h15": 0.03498038474414433,
+   "sd_h1": 0.017632519448111783,
+   "sd_h5": 0.0040139423137070356,
+   "sd_h15": 0.004225735406078875,
+   "p1": 0.003,
+   "p2": 0.03
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "depol 1e-2 / 1e-1",
+   "n_seeds": 3,
+   "skill_h1": -0.03366713597847326,
+   "skill_h5": -0.0007318413945315294,
+   "skill_h15": -0.0064558710886080855,
+   "sd_h1": 0.13997242928815654,
+   "sd_h5": 0.028228234113209412,
+   "sd_h15": 0.021050317399242655,
+   "p1": 0.01,
+   "p2": 0.1
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "Heron r2-like (marrakesh)",
+   "n_seeds": 3,
+   "skill_h1": 0.06860456016094496,
+   "skill_h5": 0.05183381515914417,
+   "skill_h15": 0.040444454656764085,
+   "sd_h1": 0.018503733751954268,
+   "sd_h5": 0.0019329848479230805,
+   "sd_h15": 0.0019861561870952106,
+   "p1": 0.0003,
+   "p2": 0.003
+  },
+  {
+   "family": "hybrid QNN",
+   "model": "hqnn_noreup_q4_l2",
+   "setting": "Heron r1-like (torino)",
+   "n_seeds": 3,
+   "skill_h1": 0.06893248562168368,
+   "skill_h5": 0.05200274884767538,
+   "skill_h15": 0.03996477934928514,
+   "sd_h1": 0.017907559688374017,
+   "sd_h5": 0.001617020640843849,
+   "sd_h15": 0.00205405990014143,
+   "p1": 0.0004,
+   "p2": 0.004
+  }
+ ],
+ "ablation": [
+  {
+   "block": "hybrid QNN",
+   "variant": "hybrid QNN (main)",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.07431813325081238,
+   "skill_h5": 0.0547582878769558,
+   "skill_h15": 0.0433286760567011
+  },
+  {
+   "block": "hybrid QNN",
+   "variant": "  without entangling gates",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.08636739582572739,
+   "skill_h5": 0.053616295082522414,
+   "skill_h15": 0.04130860558805064
+  },
+  {
+   "block": "hybrid QNN",
+   "variant": "  circuit -> matched classical MLP",
+   "model": "ctrl_mlp_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.05577229356668382,
+   "skill_h5": 0.052598509551940675,
+   "skill_h15": 0.04129822881330395
+  },
+  {
+   "block": "hybrid QNN",
+   "variant": "  no middle block (cos of angles)",
+   "model": "ctrl_bottleneck_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.06640210016936916,
+   "skill_h5": 0.045444748559559565,
+   "skill_h15": 0.0328795126746945
+  },
+  {
+   "block": "hybrid design screen (seed 0)",
+   "variant": "  layers 2, re-uploading False",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.058898316956842,
+   "skill_h5": 0.05656253880578321,
+   "skill_h15": 0.04602105816428004
+  },
+  {
+   "block": "hybrid design screen (seed 0)",
+   "variant": "  layers 4, re-uploading True",
+   "model": "hqnn_q4_l4",
+   "source": "nb 18",
+   "skill_h1": 0.03819538276549539,
+   "skill_h5": 0.05530488979986359,
+   "skill_h15": 0.044742950281611016
+  },
+  {
+   "block": "hybrid design screen (seed 0)",
+   "variant": "  layers 2, re-uploading True",
+   "model": "hqnn_q4_l2",
+   "source": "nb 18",
+   "skill_h1": 0.042108913603838616,
+   "skill_h5": 0.051214891895310366,
+   "skill_h15": 0.037652477000660434
+  },
+  {
+   "block": "hybrid design screen (seed 0)",
+   "variant": "  layers 4, re-uploading False",
+   "model": "hqnn_noreup_q4_l4",
+   "source": "nb 18",
+   "skill_h1": 0.045879723025647356,
+   "skill_h5": 0.049591254524128936,
+   "skill_h15": 0.03662688983096263
+  },
+  {
+   "block": "QRC",
+   "variant": "QRC (main)",
+   "model": "qrc_q8_d4",
+   "source": "nb 19",
+   "skill_h1": 0.07456236339281867,
+   "skill_h5": 0.041046443100415386,
+   "skill_h15": 0.030641597388347225
+  },
+  {
+   "block": "QRC",
+   "variant": "  without entangling gates",
+   "model": "qrc_noent_q8_d4",
+   "source": "nb 19",
+   "skill_h1": 0.07565612102814549,
+   "skill_h5": 0.041135064299272196,
+   "skill_h15": 0.029075818605220755
+  },
+  {
+   "block": "QRC",
+   "variant": "  quantum reservoir -> classical random features",
+   "model": "ctrl_rf_q8_f40",
+   "source": "nb 19",
+   "skill_h1": 0.07689199102851467,
+   "skill_h5": 0.041842082578566364,
+   "skill_h15": 0.03012942960651266
+  },
+  {
+   "block": "QRC",
+   "variant": "  no reservoir (raw inputs)",
+   "model": "ctrl_raw_q8",
+   "source": "nb 19",
+   "skill_h1": 0.0578114761770413,
+   "skill_h5": 0.03212039539782263,
+   "skill_h15": 0.021262502058532085
+  },
+  {
+   "block": "noise",
+   "variant": "  exact",
+   "model": "qrc_noent_q4_d4",
+   "source": "nb 22",
+   "skill_h1": 0.06375804870693587,
+   "skill_h5": 0.04014724423376189,
+   "skill_h15": 0.02894276623896101
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024",
+   "model": "qrc_noent_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -42.05058211341106,
+   "skill_h5": -57.22315497954421,
+   "skill_h15": -57.21300940526999
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r2-like (marrakesh)",
+   "model": "qrc_noent_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -42.92454079428896,
+   "skill_h5": -58.940548275103986,
+   "skill_h15": -58.74030919028524
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r1-like (torino)",
+   "model": "qrc_noent_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -43.138417256645084,
+   "skill_h5": -57.82434585872422,
+   "skill_h15": -57.65195703284969
+  },
+  {
+   "block": "noise",
+   "variant": "  exact",
+   "model": "qrc_q4_d4",
+   "source": "nb 22",
+   "skill_h1": 0.06416068610873993,
+   "skill_h5": 0.041227488716250225,
+   "skill_h15": 0.031933601727801096
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024",
+   "model": "qrc_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -115.39356724899339,
+   "skill_h5": -213.1421116027266,
+   "skill_h15": -86.57078454621528
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r2-like (marrakesh)",
+   "model": "qrc_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -125.02955423277109,
+   "skill_h5": -229.4760483714606,
+   "skill_h15": -95.77520330342811
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r1-like (torino)",
+   "model": "qrc_q4_d4",
+   "source": "nb 22",
+   "skill_h1": -130.80163317830156,
+   "skill_h5": -268.08209891485785,
+   "skill_h15": -108.93548750438363
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r2-like (noise-aware readout)",
+   "model": "qrc_q4_d4",
+   "source": "nb 22",
+   "skill_h1": 0.016321962001441093,
+   "skill_h5": 0.010865669516875842,
+   "skill_h15": 0.008540685890220168
+  },
+  {
+   "block": "noise",
+   "variant": "  exact",
+   "model": "qrc_q8_d4",
+   "source": "nb 22",
+   "skill_h1": 0.07456236339281867,
+   "skill_h5": 0.041046443100415386,
+   "skill_h15": 0.030641597388347225
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024",
+   "model": "qrc_q8_d4",
+   "source": "nb 22",
+   "skill_h1": -252.85184076339988,
+   "skill_h5": -97.05298675565456,
+   "skill_h15": -23.096787612795538
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024 (noise-aware readout)",
+   "model": "qrc_q8_d4",
+   "source": "nb 22",
+   "skill_h1": 0.018689124008691754,
+   "skill_h5": 0.009338306676407782,
+   "skill_h15": 0.006617110230113428
+  },
+  {
+   "block": "noise",
+   "variant": "  exact",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.07922935470331904,
+   "skill_h5": 0.057327956048434214,
+   "skill_h15": 0.04389497949084353
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.07725881138077839,
+   "skill_h5": 0.05641529531106526,
+   "skill_h15": 0.04340932729224156
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r2-like (marrakesh)",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.07904856770389312,
+   "skill_h5": 0.05713800166283789,
+   "skill_h15": 0.04346884285443309
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r1-like (torino)",
+   "model": "hqnn_noent_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.07986404775129696,
+   "skill_h5": 0.05750988654299649,
+   "skill_h15": 0.04337341627810254
+  },
+  {
+   "block": "noise",
+   "variant": "  exact",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.07431813325081238,
+   "skill_h5": 0.0547582878769558,
+   "skill_h15": 0.0433286760567011
+  },
+  {
+   "block": "noise",
+   "variant": "  shots 1024",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.06621587789597994,
+   "skill_h5": 0.05109497929989996,
+   "skill_h15": 0.040867357222948396
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r2-like (marrakesh)",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.06860456016094496,
+   "skill_h5": 0.05183381515914417,
+   "skill_h15": 0.040444454656764085
+  },
+  {
+   "block": "noise",
+   "variant": "  Heron r1-like (torino)",
+   "model": "hqnn_noreup_q4_l2",
+   "source": "nb 22",
+   "skill_h1": 0.06893248562168368,
+   "skill_h5": 0.05200274884767538,
+   "skill_h15": 0.03996477934928514
+  }
+ ]
+}

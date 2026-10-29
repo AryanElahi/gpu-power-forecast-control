@@ -1,0 +1,75 @@
+{
+ "frozen_at": "2026-10-12 13:48:34",
+ "git_head": "96597605437198fbfb9cb0a5da4aee2b50ccbbd4",
+ "protocol": [
+  "model set frozen (main configurations chosen on validation in notebooks 18-19)",
+  "train only, no refit on train+val",
+  "hybrid models from saved checkpoints",
+  "QRC: fixed reservoirs (seeded), saved ridge readouts",
+  "noise: inference only, Heron r2-like, 1024 shots",
+  "one test run; later fixes reported"
+ ],
+ "main_hybrid": {
+  "n_qubits": 4,
+  "n_layers": 2,
+  "reupload": false,
+  "entangle": true
+ },
+ "qrc": {
+  "n_qubits": 8,
+  "depth": 4,
+  "scales": {
+   "qrc": 0.09817477042468103,
+   "qrc_noent": 0.19634954084936207,
+   "rf": 0.09817477042468103,
+   "raw": 1.5707963267948966
+  }
+ },
+ "noise": {
+  "p1": 0.0003,
+  "p2": 0.003,
+  "p_ro": 0.0125,
+  "shots": 1024
+ },
+ "models": [
+  "ctrl_bottleneck_q4_l2",
+  "ctrl_mlp_q4_l2",
+  "ctrl_raw_q8",
+  "ctrl_rf_q8_f40",
+  "hqnn_noent_noreup_q4_l2",
+  "hqnn_noreup_q4_l2",
+  "hqnn_noreup_q4_l2_heron_r2",
+  "qrc_noent_q8_d4",
+  "qrc_q8_d4"
+ ],
+ "inputs_sha256": {
+  "data/processed/model_dataset.parquet": "55001c2f957c3be21cf9c0b21250c61ad55ddf3daa7714e4e4c69ae2c29edf47",
+  "src/models/quantum.py": "6b1ab26eee9dc808648f07264216a0edaf4410d3c31d187b68c423dbb3293ec8",
+  "src/models/qrc.py": "6709a6f49832a4d0fb874f0bcc1749de8bd8bbbb30674a7be1c72f395b341f28",
+  "experiments/week5_qnn/hqnn_noreup_q4_l2_s0/model.pt": "b1fe097845ecde3642ba7a3c604fdd9dfcffacf91807def58157db60b2ceb737",
+  "experiments/week5_qnn/hqnn_noreup_q4_l2_s1/model.pt": "4e53e7e77ec2feac0a4ad03df4c1a0867b5c7138c17265ad56f26398337aea7d",
+  "experiments/week5_qnn/hqnn_noreup_q4_l2_s2/model.pt": "1e2b59d478c52bb9e77886c56ad81882e7b7dfdc24e73f3c07aa7ab974d65c85",
+  "experiments/week5_qnn/hqnn_noent_noreup_q4_l2_s0/model.pt": "0b8cffec4bb5d79af2fa9fd5762f57ed6373c9576ee7af24a09b5f0c3c562f1f",
+  "experiments/week5_qnn/hqnn_noent_noreup_q4_l2_s1/model.pt": "24400939f4b0a8c673e59fae087a5b8b445a65b540fc72501eafa1d716f84c8a",
+  "experiments/week5_qnn/hqnn_noent_noreup_q4_l2_s2/model.pt": "c1dee01e3dc680201322af37e6a1a4affa143e2dd5fb9a38bf24c26fd6c3fb98",
+  "experiments/week5_qnn/ctrl_mlp_q4_l2_s0/model.pt": "112e9d9dbc3ec985f607bc2641bbbf0c26d6898f4d11fd75a79d61c3970d98f6",
+  "experiments/week5_qnn/ctrl_mlp_q4_l2_s1/model.pt": "3126a81ff7e5117e5286fe7a3386f053b122726cbe2d9dd78603229e41e872c5",
+  "experiments/week5_qnn/ctrl_mlp_q4_l2_s2/model.pt": "27824be5a9b4723e8ef31181d3022add7d6de7d484b43fb1c8d8b9e32aea85aa",
+  "experiments/week5_qnn/ctrl_bottleneck_q4_l2_s0/model.pt": "c15964c376d0084688376e0f5c262371f2c79067645b1c255efed661026dc287",
+  "experiments/week5_qnn/ctrl_bottleneck_q4_l2_s1/model.pt": "00f1e1e0374fe01e263e5db62b6c06909b3b74105976f9c22bff8b99bcfcab88",
+  "experiments/week5_qnn/ctrl_bottleneck_q4_l2_s2/model.pt": "c493426a4b1f69d8aa238925e40b0b9b425a7700bd1e36535f58720c4348e598",
+  "experiments/week5_qrc/qrc_q8_d4_a0p098_s0/readout.npz": "181185976e0191b6f1e96b6e07e43f0feac97f0c5551c080530222ffd9463f95",
+  "experiments/week5_qrc/qrc_q8_d4_a0p098_s1/readout.npz": "88ee147449be4033318ddf9f3f0785e9c3446ba6087c2e84a2389ca5c8fb7404",
+  "experiments/week5_qrc/qrc_q8_d4_a0p098_s2/readout.npz": "210d0ea0c2b899e87195497bf7f80bd7e77e5b9ecb310e52722905101aef1f78",
+  "experiments/week5_qrc/qrc_noent_q8_d4_a0p196_s0/readout.npz": "aead36b7e093cbd29cb5635bda98c30dbe5965004c5953d99e290549695a6b35",
+  "experiments/week5_qrc/qrc_noent_q8_d4_a0p196_s1/readout.npz": "b92e8826649e529e237c62e95a52a0c6a9c334e0690583d8eaad0ced161c3179",
+  "experiments/week5_qrc/qrc_noent_q8_d4_a0p196_s2/readout.npz": "43a8f8d204ff8b3272bf56088e851e2b1a52ed346aa12c5c7d71d9e91e59cbda",
+  "experiments/week5_qrc/ctrl_rf_q8_f40_a0p098_s0/readout.npz": "9d1e4e726676ab67a53a60b22ff26b7d0dca5114bc71ebb97fb5cd6998474fcb",
+  "experiments/week5_qrc/ctrl_rf_q8_f40_a0p098_s1/readout.npz": "6920a78c87d0430fe06bd91d85ea0b4f1f64a3e63e6fce94a9969e96f005f033",
+  "experiments/week5_qrc/ctrl_rf_q8_f40_a0p098_s2/readout.npz": "e65fd1bbd0c764ac09603b84f933ca1dabaadb5120e80c7d7a6b13312874fa7d",
+  "experiments/week5_qrc/ctrl_raw_q8_s0/readout.npz": "62f96f9a923badaa7032bfd6ccdd1911351ad96a01006ef0fa3812634e47df16"
+ },
+ "val_reproduction_max_diff_kW": 0.0,
+ "test_predictions_sha256": "334776b2b896728e71c52cf68f491c8ed7dbd70c85150d235ee1d9dd8a0f8350",
+ "test_opened_at": "2026-10-12 13:50:12"
+}
